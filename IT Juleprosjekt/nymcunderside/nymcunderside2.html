@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="nymcslide1.css">
+  <link rel="stylesheet" href="..//css/nav.css">
+  <link rel="stylesheet" href="nymcunderside1.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="nav navH" href="../Hovedside.html">Motorbike AS</a>
+      <a class="nav" href="../NyMC.html">Ny MC</a>
+      <a class="nav" href="../BruktMC.html">Brukt MC</a>
+      <a class="nav" href="../Tilbehør.html">Tilbehør</a>
+      <a class="nav" href="../Bekledning.html">Bekledning</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Ny MC</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="nymcbilder/s1000rr1.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="nymcbilder/s1000rr2.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="nymcbilder/s1000rr3.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script type="text/javascript">
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <h2>BMW S1000RR 2019</h2>
+    <p class="pris">Pris</p>
+    <p class="kr">kr 200 000,-</p>
+    <div class="grid1">
+      <p id="info1">Vekt</p>
+      <p id="info2">194kg</p>
+      <p id="info1">Årsmodell</p>
+      <p id="info2">2019</p>
+      <p id="info1">Tilstand</p>
+      <p id="info2">Ny</p>
+      <p id="info1">Type</p>
+      <p id="info2">Super Sport</p>
+      <p id="info1">Effekt</p>
+      <p id="info2">205.0 hk</p>
+      <p id="info1">Farge</p>
+      <p id="info2">Motorsport</p>
+      <p id="info1">Slagvolum</p>
+      <p id="info2">999cc</p>
+    </div>
+    <h3>Vi er medlem av NMCF</h3>
+    <p id="nmcf">Du kjøper trygt når du kjøper motorsykkel fra en NMCF forhandler, som har forpliktet seg til å følge NMCFs autorisasjon. Dette gir deg trygghet ved kjøp av ny eller brukt motorsykkel.</p>
+    <p id="nmcf">Les mer: www.nmcf.no</p>
+  </main>
+</body>
+
+</html>

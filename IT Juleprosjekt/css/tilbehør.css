@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 70px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.tilbehør {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1300px;
+  margin: auto;
+  grid-gap: 1.5em;
+}
+
+h2 {
+  font-size: 20px;
+  color: red;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+
+.produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.produkt:hover {
+  box-shadow: 1px 1px 3px 3px gray;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .tilbehør {
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .tilbehør {
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}

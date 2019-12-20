@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="..//css/style.css">
+  <link rel="stylesheet" href="..//css/nav.css">
+  <link rel="stylesheet" href="tilbehørunderside1.css">
+  <link rel="stylesheet" href="slide1.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="nav navH" href="../Hovedside.html">Motorbike AS</a>
+      <a class="nav" href="../NyMC.html">Ny MC</a>
+      <a class="nav" href="../BruktMC.html">Brukt MC</a>
+      <a class="nav" href="../Tilbehør.html">Tilbehør</a>
+      <a class="nav" href="../Bekledning.html">Bekledning</a>
+    </nav>
+  </header>
+  <main>
+    <div class="grid">
+      <section>
+        <h1>YAMAHA YZF-R1 2020</h1>
+        <h2>Slip-On Line (Titanium) Track Day</h2>
+        <p>The Track Day Slip-On Line for the Yamaha YZF-R1 was specially developed for use on racetracks where lower noise levels are required. It is made from race-proven materials: titanium for the outer sleeve and carbon fibre for the end cap and
+          the muffler bracket and clamp. The muffler has two noise inserts, one on the front and the other on the back, which means that the customer has various options to tune the noise level where required.</p>
+        <p>The slip-on must be combined with either the L-Y10SO11T/TD link pipe for mounting on stock headers or the L-Y10E5/TD link pipe for mounting on the header set from the S-Y10E3-APT Evolution Line kit, Evolution Line S-Y10E3-APT or Racing
+          Line S-Y10R15-APLT (the collector and headers with associated fitting material (flanges, springs, inner sleeves and lambda plugs - please refer to schematics of the mentioned systems).</p>
+        <p>The mandatory P-MBY10E2 fitting kit, including the muffler bracket and clamp, must be ordered.</p>
+        <p>THIS PRODUCT DOES NOT MEET EMISSION COMPLIANCE REQUIREMENTS FOR STREET OR HIGHWAY USE.</p>
+      </section>
+      <section id="span2">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="bilder/potte1.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="bilder/potte2.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <script type="text/javascript">
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1
+            }
+            if (n < 1) {
+              slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

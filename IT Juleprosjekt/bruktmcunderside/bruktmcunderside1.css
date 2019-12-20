@@ -1,0 +1,77 @@
+body {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  text-align: left;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 900px;
+  font-size: 3vw;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.pris {
+  margin: auto;
+  max-width: 900px;
+  margin-top: 20px;
+  font-size: 2vw;
+  font-family: sans-serif;
+}
+
+.kr {
+  margin: auto;
+  max-width: 900px;
+  margin-top: 10px;
+  font-size: 2.7vw;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.grid1 {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+#info1 {
+  color: grey;
+  font-family: sans-serif;
+  font-size: 1.1vw;
+}
+
+#info2 {
+  font-family: sans-serif;
+  font-size: 1.1vw;
+}
+
+h3 {
+  text-align: left;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 900px;
+  font-size: 2.4vw;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#nmcf {
+  text-align: left;
+  margin: auto;
+  max-width: 900px;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: grey;
+}

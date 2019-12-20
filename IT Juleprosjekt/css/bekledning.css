@@ -1,0 +1,47 @@
+.dainesegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-gap: 1em;
+}
+
+img {
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  font-weight: 250;
+}
+
+#type {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.1vw;
+}
+
+#pris {
+  color: grey;
+  font-size: 1.1vw
+}
+
+section {
+  padding-left: 20px;
+}
+
+section:hover {
+  box-shadow: 1px 1px 3px 3px grey;
+  transition: 0.3s;
+}
